@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+
+spring:
+  application:
+    name: discoveryservice # 고유한 아이디
+
+# server만 기동해야 하므로 client 해제
+eureka:
+  client:
+    register-with-eureka: false # 유레카에 등록 X
+    fetch-registry: false
